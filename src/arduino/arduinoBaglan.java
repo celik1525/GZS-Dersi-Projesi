@@ -479,10 +479,12 @@ em=emf.createEntityManager();
             jTextField1.setText(add1);
             jTextField2.setText(add2);
             jTextField3.setText(add3);
-
+ps.close();
+rs.close();
         }catch(Exception e){
 
         }
+
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
