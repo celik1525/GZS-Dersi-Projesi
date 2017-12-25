@@ -38,7 +38,7 @@ public class Ldr implements Serializable {
     private String tarih;
     @Column(name = "deger")
     private Integer deger;
-
+   
     public Ldr() {
     }
 

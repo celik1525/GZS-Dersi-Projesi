@@ -59,12 +59,12 @@ public class lcdSaat extends JFrame {
                 Thread thr=new Thread(){
                 @Override
                 public void run(){
-                    try{Thread.sleep(100);}catch(Exception e){}
+                    try{Thread.sleep(10000);}catch(Exception e){}
                 PrintWriter output=new PrintWriter(chosenPort.getOutputStream());
                 while(true){
-                    output.print(new SimpleDateFormat("hh:mm:ss a             mmmmmmmm dd,yyyy").format(new Date()));
+                    output.print(new SimpleDateFormat("hh:mm:ss a            mmmmmm dd,yyyy").format(new Date()));
                     output.flush();
-                    try{Thread.sleep(100);}catch(Exception e){}
+                    try{Thread.sleep(10000);}catch(Exception e){}
                    }
                     
                 }
